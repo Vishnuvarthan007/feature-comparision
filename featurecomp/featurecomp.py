@@ -7,7 +7,7 @@ ch = {
 }
 ch = pd.DataFrame(ch)
 st.title("EV Comparisons")
-df = pd.read_csv("Cheapestelectriccars-EVDatabase.csv")
+df = pd.read_csv("featurecomp/Cheapestelectriccars-EVDatabase.csv")
 user_input_text_1 = st.multiselect("Select Car Types", df['Name'].unique())
 user_input_text_2 = st.selectbox("Select Parameter", df.columns)
 selected_chart = st.selectbox("Select Chart Type", ch['chart'].unique())
