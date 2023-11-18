@@ -12,7 +12,7 @@ ch = {
 ch = pd.DataFrame(ch)
 
 st.title("EV car Comparisons")
-df = pd.read_csv("Cheapestelectriccars-EVDatabase.csv")
+df = pd.read_csv("featurecomp/Cheapestelectriccars-EVDatabase.csv")
 sliced_df = df.drop('Name', axis=1)
 
 
